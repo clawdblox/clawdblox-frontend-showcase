@@ -91,14 +91,7 @@ npc:Interact(player, "Halt! Who goes there?")
           </div>
 
           <div className="flex items-center gap-4 text-sm text-muted-foreground pt-4">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="size-8 rounded-full border-2 border-[#24272F] bg-gray-600 overflow-hidden">
-                   <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" className="size-full object-cover" />
-                </div>
-              ))}
-            </div>
-            <p>Trusted by 500+ indie devs</p>
+            <p>Open Source & Free</p>
           </div>
         </motion.div>
 

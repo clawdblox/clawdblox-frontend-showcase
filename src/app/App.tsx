@@ -2,7 +2,6 @@ import '../styles/fonts.css';
 import '../styles/theme.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import SocialProof from './components/SocialProof';
 import Features from './components/Features';
 import RobloxShowcase from './components/RobloxShowcase';
 import HowItWorks from './components/HowItWorks';
@@ -20,7 +19,6 @@ function App() {
       <SEO />
       <Navbar />
       <Hero />
-      <SocialProof />
       <Features />
       <RobloxShowcase />
       <HowItWorks />

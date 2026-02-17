@@ -33,7 +33,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Join thousands of developers building the next generation of games. Start creating soulful NPCs today.
+            Join the community building the next generation of games. Start creating soulful NPCs today.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">

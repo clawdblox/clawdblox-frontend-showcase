@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "Can I use it in production?",
-    answer: "Yes. The Docker container includes production-ready PostgreSQL, pgvector, and Redis configurations. Many indie games are already using it live.",
+    answer: "Yes. The Docker container includes production-ready PostgreSQL, pgvector, and Redis configurations. The stack is production-ready and designed for live games.",
   },
   {
     question: "Where is my data stored?",

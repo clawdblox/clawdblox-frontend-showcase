@@ -14,55 +14,46 @@ const CodeExamples = () => {
       label: 'Roblox / Lua',
       code: `local MemoryWeave = require(game.ServerStorage.MemoryWeave)
 
--- Initialize NPC with personality traits
-local guard = MemoryWeave.new("City_Guard", {
-    traits = { "Vigilant", "Suspicious", "Loyal" },
-    backstory = "Former adventurer, took an arrow to the knee."
+local mw = MemoryWeave.new({
+    baseUrl = "https://your-server.com",
+    apiKey = "mw_your_api_key",
+    signingSecret = "your_signing_secret",
 })
 
--- On player proximity
-guard:Observe(player, "Player is drawing a weapon")
-    :andThen(function(reaction)
-        if reaction.sentiment == "negative" then
-            guard:Say("Sheathe that blade, traveler!")
-        end
-    end)`,
+-- Player talks to an NPC — memory is automatic
+local response = mw:Chat(npcId, tostring(player.UserId), "Got any quests?")
+print(response.message)  -- "Ah, you again! Last time you helped me
+                          --  find my lost sword. I have another task..."`,
     },
     curl: {
       language: 'bash',
       icon: Globe,
       label: 'REST API',
-      code: `curl -X POST https://api.memoryweave.local/v1/interact \\
-  -H "Authorization: Bearer YOUR_API_KEY" \\
-  -H "Content-Type: application/json" \\
-  -d '{
-    "npc_id": "blacksmith_01",
-    "player_id": "player_123",
-    "message": "Do you have any swords for sale?",
-    "context": {
-      "location": "Blacksmith Shop",
-      "time_of_day": "Afternoon"
-    }
-  }'`,
+      code: `curl https://your-server.com/api/v1/npcs \\
+  -H "x-api-key: mw_your_api_key" \\
+  -H "Content-Type: application/json"`,
     },
     websocket: {
       language: 'javascript',
       icon: Server,
       label: 'WebSocket',
-      code: `const ws = new WebSocket('wss://api.memoryweave.local/v1/stream');
-
-ws.onopen = () => {
-  ws.send(JSON.stringify({
-    type: 'connect',
-    npc_id: 'merchant_05',
-    player_id: 'player_123'
-  }));
-};
+      code: `const ws = new WebSocket('wss://your-server.com/ws?api_key=YOUR_API_KEY');
 
 ws.onmessage = (event) => {
   const data = JSON.parse(event.data);
-  console.log('NPC says:', data.response);
-  // Real-time voice synthesis or animation triggers
+
+  if (data.type === 'auth:success') {
+    ws.send(JSON.stringify({
+      type: 'chat',
+      npc_id: 'NPC_UUID',
+      player_id: 'player_123',
+      message: 'Hello, merchant!'
+    }));
+  }
+
+  if (data.type === 'chat:response') {
+    console.log('NPC says:', data.data);
+  }
 };`,
     },
   };
