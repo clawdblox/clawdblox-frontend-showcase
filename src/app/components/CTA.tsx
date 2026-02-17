@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 import { Github, ArrowRight, Mail } from 'lucide-react';
 import { useState } from 'react';
 

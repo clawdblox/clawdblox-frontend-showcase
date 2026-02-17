@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 import { GlassCard } from './ui/GlassCard';
 import { ArrowRight, Github, Terminal } from 'lucide-react';
 import CodeBlock from './CodeBlock';
