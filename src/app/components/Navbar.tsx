@@ -30,17 +30,10 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="size-10 rounded-xl bg-gradient-to-br from-[#05b6f8] to-[#037db0] flex items-center justify-center text-xl shadow-lg shadow-[#05b6f8]/20 group-hover:scale-105 transition-transform">
-            🧠
-          </div>
-          <div className="flex flex-col">
-            <span className="font-heading font-bold text-lg leading-tight text-white group-hover:text-[#05b6f8] transition-colors">
-              MemoryWeave
-            </span>
-            <span className="text-xs text-muted-foreground font-medium">
-              by ClawdBlox
-            </span>
-          </div>
+          <img src="/clawdblox-logo.png" alt="ClawdBlox" className="size-10 rounded-xl group-hover:scale-105 transition-transform" />
+          <span className="font-heading font-bold text-lg leading-tight text-white group-hover:text-[#05b6f8] transition-colors">
+            ClawdBlox
+          </span>
         </a>
 
         {/* Desktop Nav */}

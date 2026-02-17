@@ -1,7 +1,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* MemoryWeave Design System - Dark Mode Only */
+  /* ClawdBlox Design System - Dark Mode Only */
   --background: #24272F;
   --foreground: #ffffff;
   

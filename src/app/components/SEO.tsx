@@ -7,7 +7,7 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "MemoryWeave - Give your NPCs a soul",
+  title = "ClawdBlox - Give your NPCs a soul",
   description = "Open-source framework by ClawdBlox that gives NPCs persistent memory and evolving personalities. Built for Roblox, works everywhere.",
   image = "https://welcome.clawdblox.xyz/favicon.png"
 }: SEOProps) => {
@@ -56,8 +56,7 @@ const SEO = ({
       link.rel = 'icon';
       document.head.appendChild(link);
     }
-    // SVG encoded favicon for 🧠 emoji
-    link.href = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>`;
+    link.href = '/clawdblox-logo.png';
 
   }, [title, description, image]);
 

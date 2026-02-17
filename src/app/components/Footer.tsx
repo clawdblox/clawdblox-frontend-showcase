@@ -7,17 +7,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="size-8 rounded-lg bg-gradient-to-br from-[#05b6f8] to-[#037db0] flex items-center justify-center text-lg shadow-lg shadow-[#05b6f8]/20">
-              🧠
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-base text-white">
-                MemoryWeave
-              </span>
-              <span className="text-xs text-muted-foreground">
-                by ClawdBlox
-              </span>
-            </div>
+            <img src="/clawdblox-logo.png" alt="ClawdBlox" className="size-8 rounded-lg" />
+            <span className="font-heading font-bold text-base text-white">
+              ClawdBlox
+            </span>
           </div>
 
           {/* Links */}

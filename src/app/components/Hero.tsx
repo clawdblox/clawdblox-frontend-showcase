@@ -76,7 +76,7 @@ npc:Interact(player, "Halt! Who goes there?")
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-            MemoryWeave gives game characters a soul. They remember interactions, evolve personalities, and build relationships with players.
+            ClawdBlox gives game characters a soul. They remember interactions, evolve personalities, and build relationships with players.
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">

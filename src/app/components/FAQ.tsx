@@ -5,7 +5,7 @@ import { clsx } from 'clsx';
 
 const faqs = [
   {
-    question: "Is MemoryWeave really free?",
+    question: "Is ClawdBlox really free?",
     answer: "Yes, 100% open-source under the MIT license. You can host it yourself for free forever.",
   },
   {
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How much does the AI cost?",
-    answer: "You pay your AI provider directly (e.g., Groq, OpenAI). MemoryWeave itself is free software. If you use local LLMs (like Llama 3 via Ollama), it's completely free to run.",
+    answer: "You pay your AI provider directly (e.g., Groq, OpenAI). ClawdBlox is free and open-source software. If you use local LLMs (like Llama 3 via Ollama), it's completely free to run.",
   },
   {
     question: "Can I use it in production?",
