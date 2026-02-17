@@ -37,14 +37,18 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button size="lg" className="rounded-full px-8 w-full sm:w-auto shadow-[0_0_40px_rgba(5,182,248,0.5)] group">
-              <Github className="mr-2 size-5" />
-              Star on GitHub
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 w-full sm:w-auto border-white/20 text-white hover:bg-white/10 group">
-              Read the Docs
-              <ArrowRight className="ml-2 size-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button size="lg" className="rounded-full px-8 w-full shadow-[0_0_40px_rgba(5,182,248,0.5)] group">
+                <Github className="mr-2 size-5" />
+                Star on GitHub
+              </Button>
+            </a>
+            <a href="#" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="rounded-full px-8 w-full border-white/20 text-white hover:bg-white/10 group">
+                Read the Docs
+                <ArrowRight className="ml-2 size-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </div>
 
           {/* Waitlist Card */}

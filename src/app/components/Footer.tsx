@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Links */}
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-white transition-colors">Documentation</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
             <a href="#" className="hover:text-white transition-colors">Discord</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
@@ -31,10 +31,10 @@ const Footer = () => {
 
           {/* Socials */}
           <div className="flex gap-4">
-            <a href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
+            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
               <Github className="size-5" />
             </a>
-            <a href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
+            <a href="https://x.com/clawdblox" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
               <Twitter className="size-5" />
             </a>
              <a href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">

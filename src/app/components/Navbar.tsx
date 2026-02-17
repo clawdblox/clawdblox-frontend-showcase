@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://github.com/clawdblox/memoryweave" // Placeholder
+            href="https://github.com/clawdblox"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors"
@@ -68,7 +68,7 @@ const Navbar = () => {
             <Github className="size-5" />
           </a>
           <a
-            href="https://github.com/clawdblox/memoryweave"
+            href="https://github.com/clawdblox"
             className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#05b6f8] to-[#037db0] text-white text-sm font-semibold shadow-lg shadow-[#05b6f8]/25 hover:shadow-[#05b6f8]/40 hover:scale-105 transition-all active:scale-95"
           >
             Get Started
@@ -104,7 +104,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="https://github.com/clawdblox/memoryweave"
+              href="https://github.com/clawdblox"
               className="mt-4 flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-gradient-to-r from-[#05b6f8] to-[#037db0] text-white font-semibold shadow-lg shadow-[#05b6f8]/20"
               onClick={() => setIsOpen(false)}
             >

@@ -9,7 +9,7 @@ interface SEOProps {
 const SEO = ({
   title = "MemoryWeave - Give your NPCs a soul",
   description = "Open-source framework by ClawdBlox that gives NPCs persistent memory and evolving personalities. Built for Roblox, works everywhere.",
-  image = "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop" // Placeholder abstract tech image
+  image = "https://welcome.clawdblox.xyz/favicon.png"
 }: SEOProps) => {
   useEffect(() => {
     // Update Title
@@ -47,6 +47,7 @@ const SEO = ({
     updateOG('og:url', window.location.href);
     updateOG('og:type', 'website');
     updateOG('twitter:card', 'summary_large_image');
+    updateMeta('twitter:site', '@clawdblox');
 
     // Update Favicon (Dynamic Emoji)
     let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;

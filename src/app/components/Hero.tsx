@@ -80,14 +80,18 @@ npc:Interact(player, "Halt! Who goes there?")
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button size="lg" className="rounded-full px-8 shadow-[0_0_30px_rgba(5,182,248,0.4)] group">
-              Get Started — It's Free
-              <ArrowRight className="ml-2 size-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 border-white/20 text-white hover:bg-white/10">
-              <Github className="mr-2 size-5" />
-              View on GitHub
-            </Button>
+            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="rounded-full px-8 shadow-[0_0_30px_rgba(5,182,248,0.4)] group">
+                Get Started — It's Free
+                <ArrowRight className="ml-2 size-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="rounded-full px-8 border-white/20 text-white hover:bg-white/10">
+                <Github className="mr-2 size-5" />
+                View on GitHub
+              </Button>
+            </a>
           </div>
 
           <div className="flex items-center gap-4 text-sm text-muted-foreground pt-4">
