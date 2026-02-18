@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Button } from './ui/button';
-import { Github, ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 import { useState } from 'react';
 
 const CTA = () => {
@@ -37,10 +37,10 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://clawdblox.xyz" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button size="lg" className="rounded-full px-8 w-full shadow-[0_0_40px_rgba(5,182,248,0.5)] group">
-                <Github className="mr-2 size-5" />
-                Star on GitHub
+                Launch App
+                <ArrowRight className="ml-2 size-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
             <a href="#" className="w-full sm:w-auto">

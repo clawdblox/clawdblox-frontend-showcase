@@ -80,9 +80,9 @@ npc:Interact(player, "Halt! Who goes there?")
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
-            <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer">
+            <a href="https://clawdblox.xyz" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="rounded-full px-8 shadow-[0_0_30px_rgba(5,182,248,0.4)] group">
-                Get Started — It's Free
+                Launch App
                 <ArrowRight className="ml-2 size-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
