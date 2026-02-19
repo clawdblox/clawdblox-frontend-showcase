@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: "Features", href: "#features" },
     { name: "How it works", href: "#how-it-works" },
     { name: "Roblox", href: "#roblox" },
-    { name: "Docs", href: "#" }, // Placeholder
+    { name: "Docs", href: "https://gitbook.clawdblox.xyz", external: true },
   ];
 
   return (
@@ -42,6 +42,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm font-medium text-muted-foreground hover:text-[#05b6f8] transition-colors relative group"
             >
               {link.name}
@@ -92,6 +93,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-lg font-medium text-white/80 hover:text-[#05b6f8] py-2 border-b border-white/5"
                 onClick={() => setIsOpen(false)}
               >
