@@ -1,4 +1,4 @@
-import { Github, Twitter, MessageCircle } from 'lucide-react';
+import { Github, Twitter, MessageCircle, BookOpen } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,6 +26,9 @@ const Footer = () => {
           <div className="flex gap-4">
             <a href="https://github.com/clawdblox" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
               <Github className="size-5" />
+            </a>
+            <a href="https://gitbook.clawdblox.xyz" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
+              <BookOpen className="size-5" />
             </a>
             <a href="https://x.com/clawdblox" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-colors">
               <Twitter className="size-5" />
